@@ -9,8 +9,14 @@ type: 'loop',
 });
 
 splide1.mount();
+
 var splide2 = new Splide('#slider2', {
     type: 'loop',
 });
 
 splide2.mount();
+var splide3 = new Splide('#slider3', {
+    type: 'loop',
+});
+
+splide3.mount();
