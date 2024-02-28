@@ -30,7 +30,7 @@ const Home = () => {
       <div className="w-full h-full ml-64">
         <ComputersCanvas />
       </div>
-      <div className='absolute xs:bottom-28 bottom-40 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-20 bottom-40 w-full flex justify-center items-center'>
         <a href='#about'>
           <button className='bg-green-700 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
             More About Me
