@@ -1,0 +1,11 @@
+Model Information:
+* title:	Welcome back! Halloween special
+* source:	https://sketchfab.com/3d-models/welcome-back-halloween-special-0e329353a7c74e64a9e0bed042559836
+* author:	NatyNath (https://sketchfab.com/natynath)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Welcome back! Halloween special" (https://sketchfab.com/3d-models/welcome-back-halloween-special-0e329353a7c74e64a9e0bed042559836) by NatyNath (https://sketchfab.com/natynath) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
