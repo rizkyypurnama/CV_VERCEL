@@ -16,7 +16,7 @@ const Home = () => {
           <h1 className={`${styles.HomeHeadText} text-white`}>
             Hi, I'm <span className='text-green-600'>Rizky</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 text-[19px] `}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-[16px] `}>
             <span className="text-green-600">as a</span>
             <br/>
             Front-end developer 
@@ -27,15 +27,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='absolute xs:bottom-15 bottom-28 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='bg-green-700 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
-            More About Me
-          </div>
-        </a>
-      </div>
       <div className="w-full h-full ml-64">
         <ComputersCanvas />
+      </div>
+      <div className='absolute xs:bottom-28 bottom-40 w-full flex justify-center items-center'>
+        <a href='#about'>
+          <button className='bg-green-700 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
+            More About Me
+          </button>
+        </a>
       </div>
 
       <style jsx>{`
