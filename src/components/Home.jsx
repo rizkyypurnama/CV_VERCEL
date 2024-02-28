@@ -1,8 +1,19 @@
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { SectionWrapper } from "../wrapper";
+import React, { useEffect, useState } from 'react';
 
 const Home = () => {
+  const [isButtonUp, setIsButtonUp] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsButtonUp((prev) => !prev);
+    }, 3000); // Ganti nilai 3000 dengan durasi yang diinginkan dalam milidetik
+
+    // Membersihkan interval saat komponen di-unmount
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <section className={`relative w-full h-screen mx-auto`} id="home">
       <div
@@ -30,7 +41,7 @@ const Home = () => {
       <div className="w-full h-full ml-64">
         <ComputersCanvas />
       </div>
-      <div className='absolute xs:bottom-20 bottom-40 w-full flex justify-center items-center'>
+      <div className={`animateUpDown absolute xs:bottom-28 bottom-40 w-full flex justify-center items-center ${isButtonUp ? 'up' : 'down'}`}>
         <a href='#about'>
           <button className='bg-green-700 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
             More About Me

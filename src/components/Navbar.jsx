@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-zinc-950" : "bg-transparent"}`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-gray-950" : "bg-transparent"}`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -63,7 +63,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-slate-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-card`}>
+          <div className={`${toggle ? 'flex' : 'hidden'}  p-6 bg-slate-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-card`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
                 <li

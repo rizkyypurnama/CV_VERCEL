@@ -19,6 +19,26 @@
   display: block;
 }
 
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Ganti nilai sesuai keinginan */
+  }
+}
+
+.animateUpDown {
+  animation: moveUpDown 1s infinite; /* Ganti nilai 3s dengan durasi yang diinginkan dalam detik */
+}
+
+.animateUpDown.up {
+  animation-direction: alternate;
+}
+
+.animateUpDown.down {
+  animation-direction: alternate-reverse;
+}
 
 .black-gradient {
   background: #000000;
