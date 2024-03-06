@@ -25,10 +25,10 @@ const Home = () => {
 
         <div>
           <h1 className={`${styles.HomeHeadText} text-white`}>
-            Hi, I'm <span className='text-green-600'>Rizky</span>
+            Hi, I'm <span className='text-lime-500'>Rizky</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 text-[16px] `}>
-            <span className="text-green-600">as a</span>
+            <span className="text-lime-600">as a</span>
             <br/>
             Front-end developer 
             <br/>
@@ -43,7 +43,7 @@ const Home = () => {
       </div>
       <div className={`animateUpDown absolute xs:bottom-28 bottom-40 w-full flex justify-center items-center ${isButtonUp ? 'up' : 'down'}`}>
         <a href='#about'>
-          <button className='bg-green-700 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
+          <button className='bg-lime-600 rounded-xl flex justify-center items-start p-3 text-white font-bold'>
             More About Me
           </button>
         </a>

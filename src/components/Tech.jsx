@@ -19,7 +19,7 @@ const TechnologyCard = ({ index, title, icon, experience }) => {
             scale: 1,
             speed: 450
           }}
-          className=' rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col bg-slate-800'
+          className=' rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col bg-gray-700'
         >
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
@@ -34,7 +34,7 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>My <span className="text-green-600">Skills</span> Tech.</h2>
+        <h2 className={styles.sectionHeadText}>My <span className="text-gray-800">Skills</span> Tech.</h2>
       </motion.div>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>

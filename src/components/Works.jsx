@@ -25,7 +25,7 @@ const ProjectCard = ({ index, name, description, tags, image, detailPic }) => {
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className={`bg-slate-800 p-5 rounded-2xl sm:w-[500px] w-full shadow-card`} onClick={handleDialogOpen} >
+      <div className={`bg-gray-700 p-5 rounded-2xl sm:w-[500px] w-full shadow-card`} onClick={handleDialogOpen} >
         <div className="relative w-full h-[350px]">
           <img
             src={image}
@@ -54,13 +54,13 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>My <span className="text-green-600">Projects.</span></h2>
+        <h2 className={styles.sectionHeadText}>My <span className="text-gray-800">Projects.</span></h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-slate-100 text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-black text-[20px] max-w-3xl leading-[30px]"
         >
            projects showcases my skills and experience through
           real-project of my work. It reflects my

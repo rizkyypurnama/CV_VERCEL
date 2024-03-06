@@ -10,7 +10,7 @@ import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-  contentStyle={{ background: 'rgb(36, 46, 63)' }}
+  contentStyle={{ background: 'rgb(46, 56, 63)' }}
   contentArrowStyle={{ borderRight: '7px solid rgb(36, 46, 63)' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
@@ -25,7 +25,7 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+      <h3 className="text-lime-500 text-[24px] font-bold">{experience.title}</h3>
       <p className="text-slate-300 text-[16px] font-semibold" style={{ margin: 0 }}>{experience.company_name}</p>
     </div>
 
@@ -46,7 +46,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()} >
-        <h2 className={`${styles.sectionHeadText} text-center`}>Work <span className="text-green-600">Experience.</span></h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Work <span className="text-lime-500">Experience.</span></h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
