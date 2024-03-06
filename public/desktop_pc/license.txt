@@ -1,11 +1,11 @@
 Model Information:
-* title:	Welcome back! Halloween special
-* source:	https://sketchfab.com/3d-models/welcome-back-halloween-special-0e329353a7c74e64a9e0bed042559836
-* author:	NatyNath (https://sketchfab.com/natynath)
+* title:	Laptop
+* source:	https://sketchfab.com/3d-models/laptop-ed2a53dd243f492b8ce3ad1f4f54457b
+* author:	yakuphan (https://sketchfab.com/yakuphan)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Welcome back! Halloween special" (https://sketchfab.com/3d-models/welcome-back-halloween-special-0e329353a7c74e64a9e0bed042559836) by NatyNath (https://sketchfab.com/natynath) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Laptop" (https://sketchfab.com/3d-models/laptop-ed2a53dd243f492b8ce3ad1f4f54457b) by yakuphan (https://sketchfab.com/yakuphan) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
