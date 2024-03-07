@@ -34,7 +34,7 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>My <span className="text-gray-800">Skills</span> Tech.</h2>
+        <h2 className={styles.sectionHeadText}>My <span className="text-gray-700">Skills</span> Tech.</h2>
       </motion.div>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>

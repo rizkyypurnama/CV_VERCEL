@@ -38,7 +38,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[15px] font-bold cursor-pointer flex'>created<span className='text-lime-500'>by</span>me</p>
+          <p className='text-white text-[15px] font-bold cursor-pointer flex'>rizky<span className='text-lime-500'>pg</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${active === link.title
-                    ? " text-green-500"
+                    ? " text-lime-500"
                     : "text-white"
                     } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {

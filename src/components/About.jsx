@@ -10,7 +10,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>
-          Let me <span className="text-gray-800">introduce</span> myself.
+          Let me <span className="text-gray-700">introduce</span> myself.
         </h2>
       </motion.div>
 
