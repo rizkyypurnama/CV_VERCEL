@@ -76,7 +76,7 @@ const experiences = [
         company_name: "PT. SOPWER TEKNOLOGI INDONESIA",
         icon: sopwer,
         iconBg: "#E6DEDD",
-        date: "July 2023 - Present",
+        date: "July 2023 - Februari 2024",
         points: [
             "Developing and maintaining web applications using React-Js and other related technologies.",
             "Collaborate with teams to create high-quality products.",
