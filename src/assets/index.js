@@ -1,5 +1,8 @@
 import logo from "./logo.svg";
 import github from "./github.webp";
+import email from "./email.png"
+import address from "./address.png"
+import phone from "./phone.png"
 import vercel from "./vercel.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -25,6 +28,9 @@ import sakenah from "./projects/sakenah.png"
 export {
   logo,
   github,
+  email,
+  phone,
+  address,
   vercel,
   menu,
   close,

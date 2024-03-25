@@ -22,7 +22,7 @@ const App = () => {
         <div>
         <Works />
         </div>
-        <div style={{ backgroundImage: `url(${bg2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="bg-black">
           <Contact />
         </div>
       </div>
