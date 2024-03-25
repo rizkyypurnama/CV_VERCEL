@@ -5,7 +5,19 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../wrapper";
 import { fadeIn, slideIn } from "../utils/motion";
 import { EarthCanvas } from './canvas';
-import { github, email , phone, address } from '../assets';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
+import HomeIcon from '@mui/icons-material/Home';
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import { pink } from '@mui/material/colors';
+import SvgIcon from '@mui/material/SvgIcon';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Button } from '@material-tailwind/react';
+import LanguageIcon from '@mui/icons-material/Language';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -54,6 +66,27 @@ const Contact = () => {
       })
   };
 
+  const [links] = useState({
+    github: 'https://github.com/rizkyypurnama/',
+    linkedin: 'https://linkedin.com/in/rizky-purnama-5a38a7166/',
+    instagram: 'https://www.instagram.com/kyy.prnm/',
+    website: 'https://www.rizkypg.my.id/'
+  });
+
+  const [hoverState, setHoverState] = useState({
+    github: false,
+    linkedin: false,
+    instagram: false,
+    website: false
+  });
+
+  const redirectTo = (link) => {
+    window.open(link, '_blank');
+  };
+
+  const handleHover = (key, isHovered) => {
+    setHoverState({ ...hoverState, [key]: isHovered });
+  };
   return (
 
       <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -125,37 +158,62 @@ const Contact = () => {
           className='flex-[0.75] bg-black p-8 rounded-2xl'
         >
         <h3 className="text-2xl md:text-4xl font-bold text-center"><span className='text-lime-500'>Contact </span>Detail.</h3>
-          <div className='mt-10'>
+
+          <div className='mt-20'>
             <div className='flex items-center mb-5'> {/* Menggunakan flex untuk menyatukan gambar dan teks secara horizontal */}
               <div className='github'>
-                <img
-                  src={phone}
-                  alt="Github"
-                  className="w-10 h-10 object-contain"
-                />
+                <LocalPhoneIcon/>
               </div>
               <p className='ml-2 text-lg'>(+62)857-2322-8174</p>
             </div>
             <div className='flex items-center mb-5'> {/* Menggunakan flex untuk menyatukan gambar dan teks secara horizontal */}
               <div className='email'>
-                <img
-                  src={email}
-                  alt="Email"
-                  className="w-10 h-10 object-contain"
-                />
+                <EmailIcon/>
               </div>
               <p className='ml-2 text-lg'>rizkyprnm04@gmail.com</p>
             </div>
             <div className='flex items-center'> {/* Menggunakan flex untuk menyatukan gambar dan teks secara horizontal */}
               <div className='address'>
-                <img
-                  src={address}
-                  alt="address"
-                  className="w-10 h-10 object-contain"
-                />
+                <HomeIcon color='blue'/>
               </div>
               <p className='ml-2 text-lg'>JL. Abdul Halim NO. 71/93, Cimahi</p>
             </div>
+            <div className='mt-14 justify-center items-center align-center flex'>
+      <Stack direction="row" spacing={1}>
+        <Button
+          onClick={() => redirectTo(links.github)}
+          onMouseEnter={() => handleHover('github', true)}
+          onMouseLeave={() => handleHover('github', false)}
+          sx={{ '&:hover': { bgcolor: hoverState.github ? 'success.main' : 'transparent' } }}
+        >
+          <GitHubIcon fontSize='large' color={hoverState.github ? 'success' : 'white'} />
+        </Button>
+        <Button
+          onClick={() => redirectTo(links.linkedin)}
+          onMouseEnter={() => handleHover('linkedin', true)}
+          onMouseLeave={() => handleHover('linkedin', false)}
+          sx={{ '&:hover': { bgcolor: hoverState.linkedin ? 'success.main' : 'transparent' } }}
+        >
+          <LinkedInIcon fontSize='large' color={hoverState.linkedin ? 'success' : 'white'} />
+        </Button>
+        <Button
+          onClick={() => redirectTo(links.instagram)}
+          onMouseEnter={() => handleHover('instagram', true)}
+          onMouseLeave={() => handleHover('instagram', false)}
+          sx={{ '&:hover': { bgcolor: hoverState.instagram ? 'success.main' : 'transparent' } }}
+        >
+          <InstagramIcon fontSize='large' color={hoverState.instagram ? 'success' : 'white'} />
+        </Button>
+        <Button
+          onClick={() => redirectTo(links.website)}
+          onMouseEnter={() => handleHover('website', true)}
+          onMouseLeave={() => handleHover('website', false)}
+          sx={{ '&:hover': { bgcolor: hoverState.website ? 'success.main' : 'transparent' } }}
+        >
+          <LanguageIcon fontSize='large' color={hoverState.website ? 'success' : 'white'} />
+        </Button>
+      </Stack>
+    </div>
           </div>
 
 
